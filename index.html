@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>「新聞網站系統測試」問卷</title>
+    <link rel="stylesheet" href="style.css">    
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+
+
+</head>
+<body  class="d-flex flex-column  indexbody" style="background-color:mistyrose;" >
+    
+    <div class="container py-5 mb-1 maincontainer" >
+    <div class="card ">
+         <div class = "card-header text-center" style="background-color:pink;"> <h1>「新聞網站系統測試」問卷</h1></div>
+
+        <div class="card-body shadow  " style="background-color:white;">
+          
+            <p class="card-text">大家好，我們是政治大學資管所的學生，目前正在為某新聞網站進行系統的測試。</p><br>
+            <p class="card-text">⚠️填寫問卷的過程中：</p>
+            <p class="card-text">1. <span class="important_info">您將閱讀幾則新聞</span>，並請於<span class="important_info">閱讀完畢後，點選下一頁回答相關問題</span></span> </p>
+            <p class="card-text">2. <span class="important_info">在回答問題的頁面當中也會呈現您於上一頁所閱讀的新聞</span>，因此閱讀完畢後（回答問題前）<span class="important_info">毋需記憶新聞內容。</span></p>
+            <p class="card-text">3. 建議使用<span class="important_info">電腦</span>填答</p><br>
+        
+            <p class="card-text">🙏 本份問卷完成的時間<span class="important_info">約需15分鐘</span>左右，還請您耐心地完成，非常感謝 🙏</p> <br>
+            <p class="card-text">國立政治大學資訊管理學系碩士班<br>
+              <br>
+                指導教授：彭志宏 教授
+            </p>
+        </div>
+    </div>
+    </div>
+    
+
+    <div align="center"  class=" mb-5 ">
+      <button  class="btn btn-warning mb-5 " onclick="dogo()">
+        實驗開始</button></div>
+
+
+
+    <!-- <button  onclick="send()"  >測試</button> -->
+
+
+</body>
+
+<script>
+ 
+ 
+
+    window.onload = function () {
+        localStorage.clear();
+    };
+
+
+
+    function dogo(){
+      // var urls = new Array();
+      // urls[0] = "assisted/function_demo.html";
+      // urls[1] = "normal/demo.html";
+      // n = Math.floor(Math.random()*2);
+
+      var n = Math.floor(Math.random()*8)+1;
+
+      for(i=0;i<100;i++){
+          n = Math.floor(Math.random()*8)+1;
+          }
+
+      // if (n==4){
+
+      //   for(i=0;i<100;i++){
+      //     n = Math.floor(Math.random()*8)+1;
+      //     }
+      // }
+      // var n = 1;
+      // if(n==1){
+      //   localStorage.setItem('exam', 1);
+      //   localStorage.setItem('systemsupport', 0);
+      //   localStorage.setItem('perspectivetaking', 0);
+      //   location.href= "exam1/intro.html";
+
+
+      // }
+      if(n==1){
+        localStorage.setItem('exam', 4);
+        localStorage.setItem('systemsupport', 0);
+        localStorage.setItem('perspectivetaking', 1);
+        location.href= "exam3/intro.html";
+
+
+      }
+      else if (n==2){
+        localStorage.setItem('exam', 4);
+        localStorage.setItem('systemsupport', 0);
+        localStorage.setItem('perspectivetaking', 1);
+        location.href= "exam3/intro.html";
+
+      }
+      //   else if (n==2){
+      //   localStorage.setItem('exam', 2);
+      //   localStorage.setItem('systemsupport', 0);
+      //   localStorage.setItem('perspectivetaking', 0);
+      //   location.href= "exam1/intro.html";
+
+      // }
+      
+    
+
+      else if (n==3){
+        localStorage.setItem('exam', 4);
+        localStorage.setItem('systemsupport', 0);
+        localStorage.setItem('perspectivetaking', 1);
+        location.href= "exam3/intro.html";
+
+      }
+      else if (n==4){
+        localStorage.setItem('exam', 4);
+        localStorage.setItem('systemsupport', 0);
+        localStorage.setItem('perspectivetaking', 1);
+        location.href= "exam3/intro.html";
+
+      }
+ 
+      else if (n==5){
+        localStorage.setItem('exam', 4);
+        localStorage.setItem('systemsupport', 0);
+        localStorage.setItem('perspectivetaking', 1);
+        location.href= "exam3/intro.html";
+      }else if (n==6){
+        localStorage.setItem('exam', 4);
+        localStorage.setItem('systemsupport', 0);
+        localStorage.setItem('perspectivetaking', 1);
+        location.href= "exam3/intro.html";
+      }
+      // else if (n==6){
+      //   localStorage.setItem('exam', 6);
+      //   localStorage.setItem('systemsupport', 1);
+      //   localStorage.setItem('perspectivetaking', 0);
+      //   location.href= "exam5/intro.html";
+      // }
+      // else if (n==7){
+      //   localStorage.setItem('exam', 7);
+      //   localStorage.setItem('systemsupport', 1);
+      //   localStorage.setItem('perspectivetaking', 1);
+      //   location.href= "exam7/intro.html";
+      // }
+            else if (n==7){
+              localStorage.setItem('exam', 4);
+        localStorage.setItem('systemsupport', 0);
+        localStorage.setItem('perspectivetaking', 1);
+        location.href= "exam3/intro.html";
+      }
+      // else if (n==8){
+      // //   localStorage.setItem('exam', 8);
+      // //   localStorage.setItem('systemsupport', 1);
+      // //   localStorage.setItem('perspectivetaking', 1);
+      // //   location.href= "exam7/intro.html";
+      // // 
+      // }
+      else if (n==8){
+        localStorage.setItem('exam', 4);
+        localStorage.setItem('systemsupport', 0);
+        localStorage.setItem('perspectivetaking', 1);
+        location.href= "exam3/intro.html";
+      }
+
+    }   
+</script>
+
+
+
+</html>
