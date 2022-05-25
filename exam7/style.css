@@ -325,8 +325,9 @@ body {
 .support{
     background-color: white;
     margin-top: 5rem!important;
-    height: 8rem;
+    height: 15rem;
     border-color: black;
+    line-height: 24px ;
     margin-right: 0.5rem!important;
      
 }
