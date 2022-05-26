@@ -329,7 +329,10 @@ function send7() {
   let seventwo = $('input:radio:checked[name="seventwo"]').val();
   let seventhree = $('input:radio:checked[name="seventhree"]').val();
   let sevenfour = $('input:radio:checked[name="sevenfour"]').val();
+  let sevenfive = $('input:radio:checked[name="sevenfive"]').val();
+  let sevensix = $('input:radio:checked[name="sevensix"]').val();
 
+  
   if(sevenone == undefined){
     alert("每題皆為必填，請確實填答");
   }else if(seventwo == undefined){
@@ -338,11 +341,17 @@ function send7() {
     alert("每題皆為必填，請確實填答");
   }else if(sevenfour == undefined){
     alert("每題皆為必填，請確實填答");
+  }else if(sevenfive == undefined){
+    alert("每題皆為必填，請確實填答");
+  }else if(sevensix == undefined){
+    alert("每題皆為必填，請確實填答");
   }else{
     localStorage.setItem('sevenone', sevenone);
     localStorage.setItem('seventwo', seventwo);
     localStorage.setItem('seventhree', seventhree);
     localStorage.setItem('sevenfour', sevenfour);
+    localStorage.setItem('sevenfive', sevenfive);
+    localStorage.setItem('sevensix', sevensix);
 
     console.log(sevenone);
     console.log(seventwo);
@@ -479,6 +488,9 @@ function send9() {
   var seventwo = localStorage.getItem('seventwo');  
   var seventhree = localStorage.getItem('seventhree');  
   var sevenfour = localStorage.getItem('sevenfour');  
+  var sevenfive = localStorage.getItem('sevenfive');  
+  var sevensix = localStorage.getItem('sevensix');  
+
 
  
   var eightone = localStorage.getItem('eightone');  
@@ -529,7 +541,8 @@ function send9() {
     
   }else{
     $.ajax({
-      url: "https://corsanywhere.herokuapp.com/https://script.google.com/macros/s/AKfycbxQkWZjVFxEHULPU7nSvmF9d0h2r9HXQ0rY3kvtxWXXYcztCBmkZUvOUZha_aYRgbxJ/exec",
+      url: "https://script.google.com/macros/s/AKfycbzmWSmEUjA6V812_GNgvrOLFu1bjdA72qqw8-wAa05_3tWq69avGHU4RcL02L3hTQMCiQ/exec",
+      mode: 'no-cors',
       data: {
 
           "exam":exam,
@@ -597,6 +610,8 @@ function send9() {
           "seventwo": seventwo,
           "seventhree": seventhree,
           "sevenfour": sevenfour,
+          "sevenfive": sevenfive,
+          "sevensix" : sevensix,
          
           "eightone": eightone,
           "eighttwo": eighttwo,
