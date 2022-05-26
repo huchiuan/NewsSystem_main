@@ -487,10 +487,6 @@ function send9() {
   var sevenfour = localStorage.getItem('sevenfour');  
   var sevenfive = localStorage.getItem('sevenfive');  
   var sevensix = localStorage.getItem('sevensix');  
-  console.log("幹")
-  console.log(sevenfive)
-  console.log(sevensix)
-  console.log("幹")
 
   var eightone = localStorage.getItem('eightone');  
   var eighttwo = localStorage.getItem('eighttwo');  
